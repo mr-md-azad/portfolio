@@ -1,0 +1,356 @@
+//  /* dark mode  */
+$pcolor: #FFCA28;
+$dimpcolor: #ffc92865;
+$bgcolor: #1d1d1d;
+$ptext: #F3F3F3;
+$stext: #A1A1A6;
+$bscolor: #424242;
+
+
+//  Light mode
+// $pcolor:#FFCA28;
+// $bgcolor:#f3f3f3;
+// $ptext:#1d1d1d;
+// $stext:#666666;
+// $bscolor: #d6d6d6;
+//  ******************************
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins';
+}
+
+
+body {
+  background: black;
+  margin: auto;
+  padding:0px 5%;  
+
+}
+
+html {
+  scroll-behavior: smooth;
+  color: $ptext;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// editing scroll bar 
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* 1. hero section  */
+.hero_section {
+  padding: 0 1rem;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+
+
+  // nesting   
+  .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .heading {
+    color: $ptext;
+  }
+
+  .sub_heading {
+    color: $stext;
+    font-size: 1.5rem;
+  }
+
+  
+}
+button {
+  background-color: transparent;
+  color: $stext;
+  border: 2px solid $dimpcolor;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  margin-top: 3rem;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color:white;
+    border: 2px solid $pcolor;
+  }
+  &:active{
+    color:$pcolor;
+  }
+}
+
+
+// 2.about section
+
+.about_section {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  gap: 5%;
+
+  .heading {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .description {
+    color: $stext;
+    font-size: 1.2rem;
+    padding: 1rem 0rem;
+    padding-right: 1rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+
+  }
+    p b{
+      color:white;
+    }
+  
+  .image_box2 {
+    width: 20rem;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 1px solid $bscolor;
+  }
+}
+
+
+// ****************
+//3. skills_section
+.skills_section {
+  text-align: center;
+  min-height:100vh;
+  
+
+  .section_name h1 {
+    font-size: 3rem;
+  }
+
+  p{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color:$stext;
+  }
+  .icons{
+    margin:auto;
+  }
+  .icons img {
+    width: 5rem;
+  }
+  .github_icon{
+    background:white;
+    border-radius: 100%;
+    border:0.5rem solid black;
+  }
+}
+
+
+
+
+//4. WORK section
+.works_section {
+  padding: 3rem 0rem;
+  height: auto;
+  text-align: center;
+
+  .section_name h1 {
+    font-size: 3rem;
+  }
+
+  span {
+    height: 0.25rem;
+    width: 3rem;
+    margin-top: 0.25rem;
+    background: var(--pcolor);
+    transition: width 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  .heading-text:hover+span {
+    width: 7rem;
+  }
+
+  .cards .ltr {
+    display: flex;
+    flex-direction: reverse;
+    flex-wrap: wrap;
+  }
+
+  .cards .rtl {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+  }
+
+  .card {
+    position: relative;
+    max-width: 60rem;
+    height: 22rem;
+
+
+    margin: auto;
+    margin-top: 5em;
+    border-radius: 30px;
+    border: 1px solid $bscolor;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .body {
+    width: 50%;
+    height: 100%;
+    padding: 5%;
+
+  }
+  .head {
+    width: 50%;
+    height: 100%;
+
+  }
+
+  .head-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .rtl>.head>.head-img {
+    border-radius: 0px 30px 30px 0px;
+  }
+
+  .ltr>.head>.head-img {
+    border-radius: 30px 0px 0px 30px;
+  }
+
+  .tittle {
+    font-size: 1.5rem;
+
+    margin: 1rem 0rem;
+  }
+
+  .descriptions {
+    margin: 2em 0rem;
+    color: $stext;
+    line-height: 1.5em;
+    max-height: 5em;
+    text-overflow: ellipsis;
+    // overflow: hidden;
+  }
+  button {
+    
+    border: 2px solid white;
+    &:hover{
+      color:$pcolor;
+    }
+    &:active{
+      border: 2px solid $pcolor;
+    }
+  }
+
+
+}
+
+
+
+// Footer 
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 1rem;
+}
+
+
+
+
+
+
+// ***************************************************************************************
+
+// Mobile view max-width:480px
+@media screen and (max-width:480px) {
+  body {
+    padding: 0% 2%;
+  }
+
+  //  home sectin css
+  .hero_section {
+
+
+    // nested 
+    .heading {
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+
+
+
+  }
+
+
+  // work section 
+  .works_section {
+
+    // nesting 
+    .heading {
+      font-size: 2rem;
+    }
+
+    .card {
+      width: 90%;
+      height: 20em;
+    }
+
+    .body {
+      width: 100%;
+      height: 100%;
+      padding: 5%;
+
+    }
+
+    .head {
+      display: none;
+    }
+
+    .head .head-img {
+      border-radius: 30px 30px 0px 0px;
+    }
+
+    .rtl>.head>.head-img,
+    .ltr>.head>.head-img {
+      border-radius: 30px;
+    }
+
+  }
+
+  // Footer 
+  .footer {
+    text-align: center;
+    font-size: 10px;
+    padding: 1rem;
+  }
+
+
+}
+
