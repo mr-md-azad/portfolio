@@ -1,6 +1,6 @@
 //  /* dark mode  */
 $pcolor: #FFCA28;
-$dimpcolor: #ffc92865;
+$dimpcolor: #ffffffa4;
 $bgcolor: #1d1d1d;
 $ptext: #F3F3F3;
 $stext: #A1A1A6;
@@ -88,7 +88,6 @@ button {
   cursor: pointer;
 
   &:hover {
-    color:white;
     border: 2px solid $pcolor;
   }
   &:active{
@@ -101,7 +100,6 @@ button {
 
 .about_section {
   display: grid;
-  min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
   gap: 5%;
@@ -133,12 +131,13 @@ button {
 }
 
 
-// ****************
+// **************************************************
 //3. skills_section
 .skills_section {
   text-align: center;
-  min-height:100vh;
-  
+  display: grid;
+  align-content: center;
+  min-height: 110vh;
 
   .section_name h1 {
     font-size: 3rem;
@@ -146,7 +145,7 @@ button {
 
   p{
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color:$stext;
   }
   .icons{
@@ -154,6 +153,7 @@ button {
   }
   .icons img {
     width: 5rem; height:auto;
+    margin: 0rem 2rem;
   }
   .github_icon{
     background:white;
@@ -259,6 +259,7 @@ button {
   button {
     
     border: 2px solid white;
+    margin:1rem;
     &:hover{
       color:$pcolor;
     }
@@ -289,9 +290,26 @@ button {
 // Mobile view max-width:480px
 @media screen and (max-width:480px) {
   body {
-    padding: 0% 2%;
+    padding: 0 1rem;
   }
-
+  button {
+    background-color: transparent;
+    color: $stext;
+    border: 2px solid $pcolor;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    margin-top: 3rem;
+    position: relative;
+    cursor: pointer;
+  
+    &:hover {
+      border: 2px solid $pcolor;
+    }
+    &:active{
+      color:$pcolor;
+    }
+  }
+ 
   //  home sectin css
   .hero_section {
 
@@ -308,41 +326,85 @@ button {
 
   }
 
+  
+.skills_section {
+  text-align: center;
+ 
+  display: grid;
+  align-content: center;
+  height:100vh;
+
+  .section_name h1 {
+    font-size: 2rem;
+  }
+
+  p{
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    color:$stext;
+    font-size: 14px;
+  }
+  .icons{
+    margin:auto;
+  }
+  .icons img {
+    width: 3rem; height:auto;
+    margin: 0rem 1rem;
+  }
+  .github_icon{
+    background:white;
+    border-radius: 100%;
+    border:0.5rem solid black;
+  }
+}
+
 
   // work section 
   .works_section {
 
-    // nesting 
+    .section_name h1 {
+      font-size: 2rem;
+    }
     .heading {
       font-size: 2rem;
     }
+    .descriptions{
+      margin: 3rem 0rem;
+
+    }
+    .cards{
+      width: 100%;
+    }
 
     .card {
-      width: 90%;
-      height: 20em;
+      width: 100%;
+      height: auto;
+      padding:10% 5%;
+      background:#080808;
     }
 
     .body {
-      width: 100%;
+      padding: 0%;
       height: 100%;
-      padding: 5%;
-
+      width: 100%;
     }
 
-    .head {
-      display: none;
-    }
-
-    .head .head-img {
-      border-radius: 30px 30px 0px 0px;
-    }
-
-    .rtl>.head>.head-img,
-    .ltr>.head>.head-img {
-      border-radius: 30px;
+    .head {  display: none;    }
+    button {    
+      border: 2px solid white;
+      margin:0rem 1rem;
+      padding: 1rem;
+      &:active{
+        color:$pcolor;
+      }
+      &:active{
+        border: 2px solid $pcolor;
+      }
     }
 
   }
+
+  
 
   // Footer 
   .footer {
