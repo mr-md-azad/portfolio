@@ -1,18 +1,19 @@
 //  /* dark mode  */
-$pcolor: #FFCA28;
-$dimpcolor: #ffffffa4;
-$bgcolor: #1d1d1d;
-$ptext: #F3F3F3;
-$stext: #A1A1A6;
-$bscolor: #424242;
+// $pcolor: #FFCA28;
+// $dimpcolor: #ffffffa4;
+// $bgcolor: #1d1d1d;
+// $ptext: #F3F3F3;
+// $stext: #A1A1A6;
+// $bscolor: #424242;
 
 
 //  Light mode
-// $pcolor:#FFCA28;
+$pcolor:#FFCA28;
 // $bgcolor:#f3f3f3;
-// $ptext:#1d1d1d;
-// $stext:#666666;
-// $bscolor: #d6d6d6;
+$bgcolor:#F9FAFF;
+$ptext:#1d1d1d;
+$stext:#666666;
+$bscolor: #d6d6d6;
 //  ******************************
 
 * {
@@ -21,10 +22,13 @@ $bscolor: #424242;
   margin: 0;
   font-family: 'poppins';
 }
+*::selection{
+  color:transparent;
+}
 
 
 body {
-  background: black;
+  background: $bgcolor;
   margin: auto;
   padding:0px 5%;  
 
@@ -121,7 +125,7 @@ button {
 
   }
     p b{
-      color:white;
+      color:$pcolor;
     }
   
   .image_box2 {
@@ -212,10 +216,15 @@ button {
     margin: auto;
     margin-top: 5em;
     border-radius: 30px;
-    border: 1px solid $bscolor;
+    border: 1px solid transparent;
+    background-color: white;
+    box-shadow:0px 0px 16px 1px #e7e7e7;
 
     display: flex;
     justify-content: space-between;
+  }
+  .card:hover{
+    border: 1px solid $bscolor;
   }
 
   .body {
@@ -245,7 +254,7 @@ button {
   }
 
   .tittle {
-    font-size: 1.5rem;
+    font-size: 2rem;
 
     margin: 1rem 0rem;
   }
@@ -260,7 +269,7 @@ button {
   }
   button {
     
-    border: 2px solid white;
+    border: 2px solid $bscolor;
     margin:1rem;
     &:hover{
       color:$pcolor;
@@ -354,36 +363,6 @@ button {
 }
 
   
-.skills_section {
-  text-align: center;
- 
-  display: grid;
-  align-content: center;
-  height:100vh;
-
-  .section_name h1 {
-    font-size: 2rem;
-  }
-
-  p{
-    margin-top: 3rem;
-    margin-bottom: 0.5rem;
-    color:$stext;
-    font-size: 16px;
-  }
-  .icons{
-    margin:auto;
-  }
-  .icons img {
-    width: 3rem; height:auto;
-    margin: 0rem 0.5rem;
-  }
-  .github_icon{
-    background:white;
-    border-radius: 100%;
-    border:0.5rem solid black;
-  }
-}
 
   
 .skills_section {
@@ -410,11 +389,7 @@ button {
     width: 3rem; height:auto;
     margin: 0rem 1rem;
   }
-  .github_icon{
-    background:white;
-    border-radius: 100%;
-    border:0.5rem solid black;
-  }
+ 
 }
 
 
@@ -439,7 +414,7 @@ button {
       width: 100%;
       height: auto;
       padding:10% 5%;
-      background:#080808;
+      
     }
 
     .body {

@@ -1,25 +1,29 @@
 
 //  /* dark mode  */
- $pcolor:#FFCA28;
- $bgcolor:#1d1d1d;
- $ptext:#F3F3F3;
- $stext:#A1A1A6;
- $bscolor: #424242;
-
-
-//  Light mode
 //  $pcolor:#FFCA28;
-//  $bgcolor:#f3f3f3;
-//  $ptext:#1d1d1d;
-//  $stext:#666666;
-//  $bscolor: #d6d6d6;
+//  $bgcolor:#1d1d1d;
+//  $ptext:#F3F3F3;
+//  $stext:#A1A1A6;
+//  $bscolor: #424242;
+ 
+ 
+ //  Light mode
+ $pcolor:#FFCA28;
+ $bgcolor:#F9FAFF;
+ $ptext:#1d1d1d;
+ $stext:#666666;
+ $bscolor: #d6d6d6;
+
 //  ******************************
+
+
+
+
 
 .navbar{
    z-index:99;
    width:100%;
-//    background:black;
-   backdrop-filter: blur(16px);
+   background:$bgcolor;
    display: flex;
    justify-content: space-between;
    align-items: center;

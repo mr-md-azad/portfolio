@@ -73,7 +73,7 @@ const today = new Date();
             <p>Languages</p>
             <img src='/images/skills/html-5.svg' width={0} height={0} alt='image' />
             <img src='/images/skills/css3.svg' width={0} height={0} alt='image' />
-            <img src='/images/skills/javascript.svg' width={0} height={0} alt='image' />
+            <img src='/images/skills/javascript.gif' width={0} height={0} alt='image' />
             <img src='/images/skills/c++.svg' width={0} height={0} alt='image' />
 
 
@@ -83,7 +83,7 @@ const today = new Date();
 
             <p>Tools</p>
             <img src='/images/skills/adobe-xd.svg' width={0} height={0} alt='image' />
-            <img src='/images/skills/figma.svg' width={0} height={0} alt='image' />
+            <img src='/images/skills/figma.gif' width={0} height={0} alt='image' />
             <img src='/images/skills/visual-studio-code-2019.svg' width={0} height={0} alt='image' />
             <img className='github_icon' src='/images/skills/github.svg' width={0} height={0} alt='image' />
           </div>
