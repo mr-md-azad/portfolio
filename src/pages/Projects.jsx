@@ -5,21 +5,22 @@ import React, { useState } from 'react'
 
 const Data = [
     {
-        key: 1,
         direction: "card rtl",
+        key: 1,
         img: "/images/programming.jpg",
-        tittle: "Brain Warm-up",
-        description: "Lorem ii lroem dshfsd, , corporis eligendi sunt recusandae ad ipsa deserunt fugit rerum nesciunt. Delectus?",
+        tittle: "Personal Portfolio",
+        description: "This is my single page Responsive Personal Portfolio, created in Next.js and styled with SASS.",
         code: "#Add Link Here",
-        demo: "#Add Link Here"
+        demo: "https://mr-md-azad.vercel.app/"
     },
     {
-        key: 2,
         direction: "card ltr",
+        key: 2,
         img: "/images/laptop.jpg",
-        tittle: "Spot The Code",
-        description: "Lorem ii, , corpori corporis eligendi sunts eligendi sunt recusandae ad ipsa deserunt fugit rerum nesciunt. Delectus?",
-        link: "#Add Link Here"
+        tittle: "Auto Quotes Generator",
+        description: "A simple JavaScript mini project. I used ",
+        code:"https://github.com/mr-md-azad/random-quotes",
+        demo: "https://bit.ly/3JFRx2B"
     }
 ]
 
@@ -40,8 +41,10 @@ const Projects = () => {
                                 <div className="body">
                                     <h3 className="tittle">{currentData.tittle}</h3>
                                     <div className="descriptions">{currentData.description}</div>
+                                    <div classname="buttons">
                                     <button><a href={currentData.demo} target="_blank" rel='noreferrer'>Live Demo</a></button>
                                     <button><a href={currentData.code} target="_blank" rel='noreferrer'>View Code</a></button>
+                                    </div>
                                 </div>
 
                             </div>

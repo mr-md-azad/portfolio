@@ -7,7 +7,7 @@ import img from 'next/image'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const today = new Date();
+const today = new Date();
   return (
     <>
       <Head>
@@ -15,8 +15,8 @@ export default function Home() {
         <meta name="description" content="Designed and Developed with ❤️ by @mr_md_azad" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000"></meta>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional' rel='stylesheet'  />
-        <link href='https://fonts.googleapis.com/css?family=Poppins&display=optional' rel='stylesheet'  />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional'   />
+        <link href='https://fonts.googleapis.com/css?family=Poppins&display=optional'  />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={style.main}>
@@ -30,7 +30,7 @@ export default function Home() {
 
         {/* 2. about section  */}
         <div className='about_section' id="about">
-          {/* <div className="section_name"><h1 className='heading'>ABOUT ME</h1></div> */}
+        
           {/* about my self */}
           <div className="about_me about_box1">
             <div className="heading">About me</div>
@@ -71,7 +71,7 @@ export default function Home() {
 
           <div className="icons">
 
-            <p>Front-End Languages</p>
+            <p>Languages</p>
             <img src='/images/skills/html-5.svg' width={0}  height={0} alt='image'/>
             <img src='/images/skills/css3.svg' width={0} height={0} alt='image' />
             <img src='/images/skills/javascript.svg' width={0}   height={0}alt='image'/>
