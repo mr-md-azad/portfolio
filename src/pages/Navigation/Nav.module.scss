@@ -30,6 +30,7 @@
 }
 .tittle{
     width:7rem;
+    height:auto;
 }
 .links {
     display: flex;
@@ -38,6 +39,9 @@
 .links a{
     margin:0em 1em;
     position:relative;
+    img{
+        height:auto;
+    }
     
 
     &:hover{
@@ -70,7 +74,7 @@
         color:$stext;
     //    flex-direction: column;
     //    justify-content: center;
-              padding: 8px 0px;
+              padding: 4px 0px;
         // nesting css 
         .tittle{
             width:5rem;

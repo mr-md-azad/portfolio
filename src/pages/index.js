@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Projects from './Projects'
 import { Inter } from '@next/font/google'
 import style from '@/styles/Home.module.css'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,18 +11,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Azad's Portfolio</title>
+        <title>Azad&apos;s Portfolio</title>
         <meta name="description" content="Designed and Developed with ❤️ by @mr_md_azad" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000"></meta>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' />
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' />
+        <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional' rel='stylesheet'  />
+        <link href='https://fonts.googleapis.com/css?family=Poppins&display=optional' rel='stylesheet'  />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={style.main}>
         {/* 1. hero section  */}
         <div className="hero_section hero">
-          <div className="heading">I'm Azad <br />ui designer &<br />web developer.</div>
+          <div className="heading">I&apos;m Azad <br />ui designer &<br />web developer.</div>
 
           <div className="sub_heading"></div>
           <a href='#about'><button className="about_btn "> about me</button></a>
@@ -33,7 +34,7 @@ export default function Home() {
           {/* about my self */}
           <div className="about_me about_box1">
             <div className="heading">About me</div>
-            <div className="description">Let's know something about me,<br />My name is Md Azad (محمر آذار), {today.getFullYear()-2002} years old. An UI/UX Designer and Front-End Web Developer. Currently working as a Freelancer.</div>
+            <div className="description">Let&apos;s know something about me,<br />My name is Md Azad (محمر آذار), {today.getFullYear()-2002} years old. An UI/UX Designer and Front-End Web Developer. Currently working as a Freelancer.</div>
             <button className="skills_btn"> <a href='#skills' >My skills</a></button>
           </div>
 
@@ -59,7 +60,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* <img className='image_box2' src='images/laptop.jpg' /> */}
+          {/* <Image className='image_box2' src='images/laptop.jpg' /> */}
 
 
         </div>
@@ -71,21 +72,21 @@ export default function Home() {
           <div className="icons">
 
             <p>Front-End Languages</p>
-            <img src='images/skills/html-5.svg' width={0} />
-            <img src='images/skills/css3.svg' width={0} />
-            <img src='images/skills/javascript.svg' width={0} />
-            <img src='images/skills/c++.svg' width={0} />
+            <Image src='/images/skills/html-5.svg' width={0}  height={0} alt='image'/>
+            <Image src='/images/skills/css3.svg' width={0} height={0} alt='image' />
+            <Image src='/images/skills/javascript.svg' width={0}   height={0}alt='image'/>
+            <Image src='/images/skills/c++.svg' width={0}   height={0}alt='image'/>
 
 
             <p>Library/Framework</p>
-            <img src='images/skills/tailwind-css.svg' width={0} />
-            <img src='images/skills/react.svg' width={0} />
+            <Image src='/images/skills/tailwind-css.svg' width={0}  a height={0}lt='image'/>
+            <Image src='/images/skills/react.svg' width={0}   height={0}alt='image'/>
 
             <p>Tools</p>
-            <img src='images/skills/adobe-xd.svg' width={0} />
-            <img src='images/skills/figma.svg' width={0} />
-            <img src='images/skills/visual-studio-code-2019.svg' width={0} />
-            <img className='github_icon' src='images/skills/github.svg' width={0} />
+            <Image src='/images/skills/adobe-xd.svg' width={0}  height={0}alt='image' />
+            <Image src='/images/skills/figma.svg' width={0}   height={0}alt='image'/>
+            <Image src='/images/skills/visual-studio-code-2019.svg' width={0}  height={0}alt='image' />
+            <Image className='github_icon' src='/images/skills/github.svg' width={0} height={0} alt='image' />
           </div>
 
         </div>
