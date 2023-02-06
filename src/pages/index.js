@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Projects from './Projects'
 import { Inter } from '@next/font/google'
 import style from '@/styles/Home.module.css'
-import Image from 'next/image'
+import img from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -60,7 +60,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* <Image className='image_box2' src='images/laptop.jpg' /> */}
+          {/* <img className='image_box2' src='images/laptop.jpg' /> */}
 
 
         </div>
@@ -72,21 +72,21 @@ export default function Home() {
           <div className="icons">
 
             <p>Front-End Languages</p>
-            <Image src='/images/skills/html-5.svg' width={0}  height={0} alt='image'/>
-            <Image src='/images/skills/css3.svg' width={0} height={0} alt='image' />
-            <Image src='/images/skills/javascript.svg' width={0}   height={0}alt='image'/>
-            <Image src='/images/skills/c++.svg' width={0}   height={0}alt='image'/>
+            <img src='/images/skills/html-5.svg' width={0}  height={0} alt='image'/>
+            <img src='/images/skills/css3.svg' width={0} height={0} alt='image' />
+            <img src='/images/skills/javascript.svg' width={0}   height={0}alt='image'/>
+            <img src='/images/skills/c++.svg' width={0}   height={0}alt='image'/>
 
 
             <p>Library/Framework</p>
-            <Image src='/images/skills/tailwind-css.svg' width={0}  a height={0}lt='image'/>
-            <Image src='/images/skills/react.svg' width={0}   height={0}alt='image'/>
+            <img src='/images/skills/tailwind-css.svg' width={0}  a height={0}lt='image'/>
+            <img src='/images/skills/react.svg' width={0}   height={0}alt='image'/>
 
             <p>Tools</p>
-            <Image src='/images/skills/adobe-xd.svg' width={0}  height={0}alt='image' />
-            <Image src='/images/skills/figma.svg' width={0}   height={0}alt='image'/>
-            <Image src='/images/skills/visual-studio-code-2019.svg' width={0}  height={0}alt='image' />
-            <Image className='github_icon' src='/images/skills/github.svg' width={0} height={0} alt='image' />
+            <img src='/images/skills/adobe-xd.svg' width={0}  height={0}alt='image' />
+            <img src='/images/skills/figma.svg' width={0}   height={0}alt='image'/>
+            <img src='/images/skills/visual-studio-code-2019.svg' width={0}  height={0}alt='image' />
+            <img className='github_icon' src='/images/skills/github.svg' width={0} height={0} alt='image' />
           </div>
 
         </div>

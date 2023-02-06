@@ -35,7 +35,7 @@ const Projects = () => {
                         <div className="cards" key={currentData.key}>
                             <div className={currentData.direction}>
                                 <div className="head">
-                                    <Image src={currentData.img} className="head-img" alt='image' width={0} height={0}/>
+                                    <img src={currentData.img} className="head-img" alt='image' width={0} height={0}/>
                                 </div>
                                 <div className="body">
                                     <h3 className="tittle">{currentData.tittle}</h3>
