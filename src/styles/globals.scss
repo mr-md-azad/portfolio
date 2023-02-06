@@ -49,21 +49,22 @@ a {
 /* 1. hero section  */
 .hero_section {
   padding: 0 1rem;
-  min-height: 110vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
 
 
   // nesting   
   .heading {
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
-    font-size: 4.5rem;
-    line-height: 5rem;
-    letter-spacing: -0.1rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    // letter-spacing: -0.1rem;
   }
 
   .heading {
@@ -80,7 +81,7 @@ a {
 button {
   background-color: transparent;
   color: $stext;
-  border: 2px solid $dimpcolor;
+  border: 2px solid $pcolor;
   padding: 1rem 2rem;
   border-radius: 30px;
   margin-top: 3rem;
@@ -101,7 +102,8 @@ button {
 .about_section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-
+  align-content: center;
+  min-height: 120vh;
   gap: 5%;
 
   .heading {
@@ -312,12 +314,13 @@ button {
  
   //  home sectin css
   .hero_section {
-
+   
+    align-items: center;
 
     // nested 
     .heading {
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 3rem;
       letter-spacing: 0.1rem;
     }
@@ -325,6 +328,62 @@ button {
 
 
   }
+  
+.about_section {
+ 
+
+  .heading {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  button{
+    margin-bottom: 5rem;
+  }
+  .description {
+    font-size: 18px;
+    padding: 1rem 0rem;
+    padding-right: 0rem;
+    line-height: 1.4rem;
+
+  }
+    p b{
+      color:white;
+      padding:8px 0rem;
+    }
+  
+}
+
+  
+.skills_section {
+  text-align: center;
+ 
+  display: grid;
+  align-content: center;
+  height:100vh;
+
+  .section_name h1 {
+    font-size: 2rem;
+  }
+
+  p{
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    color:$stext;
+    font-size: 16px;
+  }
+  .icons{
+    margin:auto;
+  }
+  .icons img {
+    width: 3rem; height:auto;
+    margin: 0rem 0.5rem;
+  }
+  .github_icon{
+    background:white;
+    border-radius: 100%;
+    border:0.5rem solid black;
+  }
+}
 
   
 .skills_section {
