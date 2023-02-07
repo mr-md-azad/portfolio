@@ -7,7 +7,7 @@ import img from 'next/image'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-const today = new Date();
+  const today = new Date();
   return (
     <>
       <Head>
@@ -17,14 +17,16 @@ const today = new Date();
         <meta name="theme-color" content="#000000"></meta>
         <link href='https://fonts.googleapis.com/css?family=Montserrat&display=optional' />
         <link href='https://fonts.googleapis.com/css?family=Poppins&display=optional' />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=optional" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={style.main}>
         {/* 1. hero section  */}
         <div className="hero_section hero">
-          <div className="heading">I&apos;m Azad <br />ui designer &<br />web developer.</div>
+          <div className="heading">Hello,<br/>my name is md azad...</div>
 
-          <div className="sub_heading"></div>
+          <div className="sub_heading">an e-learner | ui designer | web developer.</div>
           <a href='#about'><button className="about_btn ">about me</button></a>
         </div>
 
@@ -33,7 +35,7 @@ const today = new Date();
           {/* about my self */}
           <div className="about_me about_box1">
             <div className="heading">ABOUT ME</div>
-            <div className="description">Let&apos;s know something about me,<br />My name is Md Azad (محمر آذار), {today.getFullYear() - 2002} years old. An UI/UX Designer and Front-End Web Developer. Currently working as a Freelancer.</div>
+            <div className="description">Hello,<br />My name is Md Azad (محمر آذار), {today.getFullYear() - 2002} years old. An UI/UX Designer and Front-End Web Developer. Currently working as a Freelancer.</div>
             <button className="skills_btn"><a href='#skills'>My skills</a></button>
           </div>
 

@@ -64,7 +64,6 @@ a {
 
   // nesting   
   .heading {
-    text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     font-size: 6rem;
@@ -74,11 +73,13 @@ a {
 
   .heading {
     color: $ptext;
+    font-family: 'Dancing Script', cursive;
   }
 
   .sub_heading {
     color: $stext;
-    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
   }
 
 
@@ -115,7 +116,8 @@ button {
 
   .heading {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
   }
 
   .description {
@@ -150,7 +152,8 @@ button {
   min-height: 110vh;
 
   .section_name h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
   }
 
   p {
@@ -166,7 +169,7 @@ button {
   .icons img {
     width: 4rem;
     height: auto;
-    margin: 0rem 2rem;
+    margin:1rem;
   }
 
   .github_icon {
@@ -186,7 +189,8 @@ button {
   text-align: center;
 
   .section_name h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
   }
 
   span {
@@ -226,13 +230,13 @@ button {
     border-radius: 30px;
     border: 1px solid transparent;
     // background-color: white;
-    box-shadow:0px 0px 16px 1px #e7e7e7;
+    box-shadow: 0px 0px 16px 1px #e7e7e7;
 
     // glassmorphism
     background: rgba(255, 255, 255, 0.607);
     backdrop-filter: blur(4px);
-    
-    
+
+
 
     display: flex;
     justify-content: space-between;
@@ -349,10 +353,9 @@ button {
 
     // nested 
     .heading {
-      text-transform: capitalize;
-      text-align: left;
-      font-size: 3rem;
-      line-height: 3rem;
+      text-align: center;
+      font-size: 4rem;
+      line-height: 5rem;
       letter-spacing: 0.1rem;
     }
 
