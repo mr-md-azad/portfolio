@@ -328,8 +328,9 @@ button {
 
     // nested 
     .heading {
-      text-transform: uppercase;
-      font-size: 2rem;
+      text-transform:capitalize;
+      text-align: left;
+      font-size: 3rem;
       line-height: 3rem;
       letter-spacing: 0.1rem;
     }
@@ -371,7 +372,7 @@ button {
   display: grid;
   align-content: center;
   height:100vh;
-
+ 
   .section_name h1 {
     font-size: 2rem;
   }
@@ -380,13 +381,13 @@ button {
     margin-top: 4rem;
     margin-bottom: 0.5rem;
     color:$stext;
-    font-size: 14px;
+    font-size: 1rem;
   }
   .icons{
     margin:auto;
   }
   .icons img {
-    width: 3rem; height:auto;
+    width: 3.5rem; height:auto;
     margin: 0rem 1rem;
   }
  
@@ -402,8 +403,9 @@ button {
     .heading {
       font-size: 2rem;
     }
+   
     .descriptions{
-      margin: 3rem 0rem;
+      margin: 1rem;
 
     }
     .cards{
@@ -413,7 +415,8 @@ button {
     .card {
       width: 100%;
       height: auto;
-      padding:10% 5%;
+      padding:1%;
+
       
     }
 
@@ -423,9 +426,22 @@ button {
       width: 100%;
     }
 
-    .head {  display: none;    }
+    .head {  
+      width: 100%;
+      display: inline-block;   
+    }
+    
+    .rtl>.head>.head-img,
+    .ltr>.head>.head-img {
+      height: 12rem;
+      width:100%;
+      border-radius:30px 30px 0px 0px;
+      // object-fit:;
+      background:green;
+    }
+    
     button {    
-      margin:0rem 1rem;
+      margin:1rem;
       padding: 1rem;
       &:active{
         color:$pcolor;
