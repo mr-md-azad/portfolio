@@ -8,7 +8,8 @@
  
  
  //  Light mode
- $pcolor:#FFCA28;
+//  $pcolor:#FFCA28;
+ $pcolor:#0077B5; // Linkedin color
  $bgcolor:#F9FAFF;
  $ptext:#1d1d1d;
  $stext:#666666;
@@ -23,14 +24,15 @@
 .navbar{
    z-index:99;
    width:100%;
-   padding:1rem 0rem;
-   background:$bgcolor;
+   padding:0.5rem 2rem;
+   border-radius: 50rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
-
+   background: rgba(255, 255, 255, 0);
+   backdrop-filter: blur(12px);
    position: sticky;
-   top:0px;
+   top:0.5rem;
    color:$stext;
 
 }
@@ -49,27 +51,6 @@
         height:auto;
     }
     
-
-    &:hover{
-        color:$ptext;
-    }
-    &::before{
-        content:"";
-        position:absolute;
-        height:2px; width:00%;
-        background:$pcolor;
-        left:0;
-        bottom:-5px;
-        transition: 0.6s;   
-    }
-    &:hover::before{
-        content:"";
-        position:absolute;
-        height:2px; width:100%;
-        background:$pcolor;
-        left:0;
-        bottom:-5px;   
-    }
 }
 
 
@@ -78,13 +59,7 @@
 @media screen and (max-width:760px) {
     .navbar{
         color:$stext;
-    //    flex-direction: column;
-    //    justify-content: center;
               padding: 4px 0px;
-        // nesting css 
-        .tittle{
-            width:5rem;
-        }
 
 
 .links{
@@ -94,26 +69,7 @@
     margin:-1em 0.5em;
     font-size: 14px;
 
-    &:active{
-        color:$ptext;
-    }
-    &::before{
-        content:"";
-        position:absolute;
-        height:2px; width:00%;
-        background:$pcolor;
-        left:0;
-        bottom:-5px;
-        transition: 0.6s;   
-    }
-    &:active::before{
-        content:"";
-        position:absolute;
-        height:2px; width:100%;
-        background:$pcolor;
-        left:0;
-        bottom:-5px;   
-    }
+   
 }
 
      }
