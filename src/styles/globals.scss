@@ -8,11 +8,12 @@
 
 
 //  Light mode
-$pcolor:#FFCA28;
-//$bgcolor:#f3f3f3;
-$bgcolor:#F9FAFF;
-$ptext:#1d1d1d;
-$stext:#666666;
+// $pcolor:#FFCA28;
+$pcolor: #0077B5; // Linkedin color
+
+$bgcolor: #F9FAFF;
+$ptext: #1d1d1d;
+$stext: #666666;
 $bscolor: #d6d6d6;
 //  ******************************
 
@@ -22,15 +23,15 @@ $bscolor: #d6d6d6;
   margin: 0;
   font-family: 'poppins';
 }
-*::selection{
-  background-color: transparent;
-}
 
 
 body {
   background: $bgcolor;
   margin: auto;
-  padding:0px 5%;  
+  padding: 0px 5%;
+  background-image: url('https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=826&t=st=1675743741~exp=1675744341~hmac=19c877f649e72fcb15b33d5e9cfd52bc3744eaf17bfd650bf7e6027e22a705f1');
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
@@ -80,8 +81,9 @@ a {
     font-size: 1.5rem;
   }
 
-  
+
 }
+
 button {
   background-color: transparent;
   color: $stext;
@@ -95,8 +97,9 @@ button {
   &:hover {
     border: 2px solid $pcolor;
   }
-  &:active{
-    color:$pcolor;
+
+  &:active {
+    color: $pcolor;
   }
 }
 
@@ -124,10 +127,11 @@ button {
     line-height: 2rem;
 
   }
-    p b{
-      color:$pcolor;
-    }
-  
+
+  p b {
+    color: $pcolor;
+  }
+
   .image_box2 {
     width: 20rem;
     object-fit: contain;
@@ -149,22 +153,26 @@ button {
     font-size: 3rem;
   }
 
-  p{
+  p {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
-    color:$stext;
+    color: $stext;
   }
-  .icons{
-    margin:auto;
+
+  .icons {
+    margin: auto;
   }
+
   .icons img {
-    width: 5rem; height:auto;
+    width: 4rem;
+    height: auto;
     margin: 0rem 2rem;
   }
-  .github_icon{
-    background:white;
+
+  .github_icon {
+    background: white;
     border-radius: 100%;
-    border:0.5rem solid black;
+    border: 0.5rem solid black;
   }
 }
 
@@ -217,13 +225,20 @@ button {
     margin-top: 5em;
     border-radius: 30px;
     border: 1px solid transparent;
-    background-color: white;
+    // background-color: white;
     box-shadow:0px 0px 16px 1px #e7e7e7;
+
+    // glassmorphism
+    background: rgba(255, 255, 255, 0.607);
+    backdrop-filter: blur(4px);
+    
+    
 
     display: flex;
     justify-content: space-between;
   }
-  .card:hover{
+
+  .card:hover {
     border: 1px solid $bscolor;
   }
 
@@ -233,6 +248,7 @@ button {
     padding: 5%;
 
   }
+
   .head {
     width: 50%;
     height: 100%;
@@ -267,14 +283,17 @@ button {
     text-overflow: ellipsis;
     // overflow: hidden;
   }
+
   button {
-    
+
     border: 2px solid $bscolor;
-    margin:1rem;
-    &:hover{
-      color:$pcolor;
+    margin: 1rem;
+
+    &:hover {
+      color: $pcolor;
     }
-    &:active{
+
+    &:active {
       border: 2px solid $pcolor;
     }
   }
@@ -303,6 +322,7 @@ button {
   body {
     padding: 0 1rem;
   }
+
   button {
     background-color: transparent;
     color: $stext;
@@ -312,23 +332,24 @@ button {
     margin-top: 3rem;
     position: relative;
     cursor: pointer;
-  
+
     &:hover {
       border: 2px solid $pcolor;
     }
-    &:active{
-      color:$pcolor;
+
+    &:active {
+      color: $pcolor;
     }
   }
- 
+
   //  home sectin css
   .hero_section {
-   
+
     align-items: center;
 
     // nested 
     .heading {
-      text-transform:capitalize;
+      text-transform: capitalize;
       text-align: left;
       font-size: 3rem;
       line-height: 3rem;
@@ -338,60 +359,70 @@ button {
 
 
   }
-  
-.about_section {
- 
 
-  .heading {
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  button{
-    margin-bottom: 5rem;
-  }
-  .description {
-    font-size: 18px;
-    padding: 1rem 0rem;
-    padding-right: 0rem;
-    line-height: 1.4rem;
+  .about_section {
 
-  }
-    p b{
-      color:white;
-      padding:8px 0rem;
+
+    .heading {
+      font-weight: bold;
+      font-size: 2rem;
+      color: $ptext;
     }
-  
-}
 
-  
+    button {
+      margin-bottom: 5rem;
+    }
 
-  
-.skills_section {
-  text-align: center;
- 
-  display: grid;
-  align-content: center;
-  height:100vh;
- 
-  .section_name h1 {
-    font-size: 2rem;
+    .description {
+      font-size: 1rem;
+      padding: 1rem 0rem;
+      padding-right: 0rem;
+      line-height: 1.4rem;
+    }
+
+    p b {
+      padding: 8px 0rem;
+
+      &:hover {
+        color: $pcolor;
+      }
+    }
+
+
   }
 
-  p{
-    margin-top: 4rem;
-    margin-bottom: 0.5rem;
-    color:$stext;
-    font-size: 1rem;
+
+
+
+  .skills_section {
+    text-align: center;
+
+    display: grid;
+    align-content: center;
+    height: 100vh;
+
+    .section_name h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      margin-top: 4rem;
+      margin-bottom: 0.5rem;
+      color: $stext;
+      font-size: 1rem;
+    }
+
+    .icons {
+      margin: auto;
+    }
+
+    .icons img {
+      width: 3.5rem;
+      height: auto;
+      margin: 0rem 1rem;
+    }
+
   }
-  .icons{
-    margin:auto;
-  }
-  .icons img {
-    width: 3.5rem; height:auto;
-    margin: 0rem 1rem;
-  }
- 
-}
 
 
   // work section 
@@ -400,24 +431,30 @@ button {
     .section_name h1 {
       font-size: 2rem;
     }
+
     .heading {
-      font-size: 2rem;
+      font-size: 1rem;
     }
-   
-    .descriptions{
+
+    .tittle {
+      font-size: 1.5rem;
+    }
+
+    .descriptions {
       margin: 1rem;
 
     }
-    .cards{
+
+    .cards {
       width: 100%;
     }
 
     .card {
       width: 100%;
       height: auto;
-      padding:1%;
+      padding: 1%;
 
-      
+
     }
 
     .body {
@@ -426,34 +463,36 @@ button {
       width: 100%;
     }
 
-    .head {  
+    .head {
       width: 100%;
-      display: inline-block;   
+      display: inline-block;
     }
-    
+
     .rtl>.head>.head-img,
     .ltr>.head>.head-img {
       height: 12rem;
-      width:100%;
-      border-radius:30px 30px 0px 0px;
+      width: 100%;
+      border-radius: 30px 30px 0px 0px;
       // object-fit:;
-      background:green;
+      background: green;
     }
-    
-    button {    
-      margin:1rem;
+
+    button {
+      margin: 1rem;
       padding: 1rem;
-      &:active{
-        color:$pcolor;
+
+      &:active {
+        color: $pcolor;
       }
-      &:active{
+
+      &:active {
         border: 2px solid $pcolor;
       }
     }
 
   }
 
-  
+
 
   // Footer 
   .footer {
@@ -464,4 +503,3 @@ button {
 
 
 }
-
