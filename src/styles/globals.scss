@@ -9,7 +9,7 @@
 
 //  Light mode
 $pcolor:#FFCA28;
-// $bgcolor:#f3f3f3;
+//$bgcolor:#f3f3f3;
 $bgcolor:#F9FAFF;
 $ptext:#1d1d1d;
 $stext:#666666;
@@ -23,7 +23,7 @@ $bscolor: #d6d6d6;
   font-family: 'poppins';
 }
 *::selection{
-  color:transparent;
+  background-color: transparent;
 }
 
 
@@ -425,7 +425,6 @@ button {
 
     .head {  display: none;    }
     button {    
-      border: 2px solid white;
       margin:0rem 1rem;
       padding: 1rem;
       &:active{

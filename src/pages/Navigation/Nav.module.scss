@@ -23,6 +23,7 @@
 .navbar{
    z-index:99;
    width:100%;
+   padding:1rem 0rem;
    background:$bgcolor;
    display: flex;
    justify-content: space-between;
@@ -31,6 +32,7 @@
    position: sticky;
    top:0px;
    color:$stext;
+
 }
 .tittle{
     width:7rem;
