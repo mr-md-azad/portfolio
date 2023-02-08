@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Azad&apos;s Portfolio</title>
+        <title>Welcome</title>
         <meta name="description" content="Designed and Developed with ❤️ by @mr_md_azad" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000"></meta>
