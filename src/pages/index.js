@@ -35,7 +35,7 @@ export default function Home() {
           {/* about my self */}
           <div className="about_me about_box1">
             <div className="heading">ABOUT ME</div>
-            <div className="description">Hello,<br />My name is Md Azad (محمر آذار), {today.getFullYear() - 2002} years old. An UI/UX Designer and Front-End Web Developer. Currently working as a Freelancer.</div>
+            <div className="description">Hello,<br />I'm Md Azad (mohammad azad), {today.getFullYear() - 2002} years old. I am an active e-learner, Improving my knowledge in UI Designing and Front-End Web Development since 2021. I have not any certificate to proof my skills. I prefered Documentatios, Google, Youtube and AI tools to learn new things.</div>
             <button className="skills_btn"><a href='#skills'>My skills</a></button>
           </div>
 

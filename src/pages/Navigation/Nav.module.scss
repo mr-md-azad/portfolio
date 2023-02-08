@@ -25,14 +25,15 @@
    z-index:99;
    width:100%;
    padding:0.5rem 2rem;
-   border-radius: 50rem;
+   
    display: flex;
    justify-content: space-between;
    align-items: center;
+   
    background: rgba(255, 255, 255, 0);
-   backdrop-filter: blur(12px);
+   backdrop-filter: blur(30px);
    position: sticky;
-   top:0.5rem;
+   top:0;
    color:$stext;
 
 }
