@@ -7,7 +7,7 @@ const Data = [
     {
         direction: "card rtl",
         key: 1,
-        img: "/images/programming.jpg",
+        img: "https://blog-frontend.envato.com/cdn-cgi/image/width=1200,quality=75,format=auto/uploads/2020/06/SOC101_Portfolio_Guide.png",
         tittle: "Personal Portfolio",
         description: "This is my single page Responsive Personal Portfolio, created in Next.js and styled with SASS.",
         code: "#Add Link Here",
@@ -16,17 +16,27 @@ const Data = [
     {
         direction: "card ltr",
         key: 2,
-        img: "/images/laptop.jpg",
+        img: "https://cdn.wallpapersafari.com/13/92/it0Bae.jpg",
         tittle: "Auto Quotes Generator",
         description: "A simple JavaScript mini project. I used ",
-        code:"https://github.com/mr-md-azad/random-quotes",
+        code: "https://github.com/mr-md-azad/random-quotes",
         demo: "https://bit.ly/3JFRx2B"
+    },
+    {
+        direction: "card rtl",
+        key: 3,
+
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
+         tittle: "Under Development",
+        description: "Coming soon...",
+        code: "",
+        demo: ""
     }
 ]
 
 const Projects = () => {
     const [currentData, setData] = useState(Data)
-    
+
     return (
         <>
             {Data.map((currentData) => {
@@ -36,14 +46,14 @@ const Projects = () => {
                         <div className="cards" key={currentData.key}>
                             <div className={currentData.direction}>
                                 <div className="head">
-                                    <img src={currentData.img} className="head-img" alt='image' width={0} height={0}/>
+                                    <img src={currentData.img} className="head-img" alt='image' width={0} height={0} />
                                 </div>
                                 <div className="body">
                                     <h3 className="tittle">{currentData.tittle}</h3>
                                     <div className="descriptions">{currentData.description}</div>
                                     <div className="buttons">
-                                    <button className="live-demo"><a href={currentData.demo} target="_blank" rel='noreferrer'>Live Demo</a></button>
-                                    <button className="view-code"><a href={currentData.code} target="_blank" rel='noreferrer'>View Code</a></button>
+                                        <button className="live-demo"><a href={currentData.demo} target="_blank" rel='noreferrer'>Live Demo</a></button>
+                                        <button className="view-code"><a href={currentData.code} target="_blank" rel='noreferrer'>View Code</a></button>
                                     </div>
                                 </div>
 
