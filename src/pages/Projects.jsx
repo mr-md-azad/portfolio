@@ -27,8 +27,8 @@ const Data = [
         key: 3,
 
         img:"https://miro.medium.com/v2/resize:fit:720/format:webp/1*8du96SQUQ0NlWmWvVu20Zw.png",
-        tittle: "Rock Paper Scissors",
-        description: "Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.",
+        tittle: "Rock Scissors Paper",
+        description: "Usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.",
         code: "https://github.com/mr-md-azad/RockPaperScissorsGame",
         demo: "https://mr-md-azad.github.io/RockPaperScissorsGame/"
     },
