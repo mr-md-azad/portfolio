@@ -31,39 +31,8 @@ const Data = [
         description: "Usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand.",
         code: "https://github.com/mr-md-azad/RockPaperScissorsGame",
         demo: "https://mr-md-azad.github.io/RockPaperScissorsGame/"
-    },
-    {
-        direction: "card ltr",
-        key: 4,
-
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
-         tittle: "Under Development",
-        description: "Coming soon...",
-        code: "",
-        demo: ""
     }
-    ,
-    {
-        direction: "card ltr",
-        key: 5,
-
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
-         tittle: "Under Development",
-        description: "Coming soon...",
-        code: "",
-        demo: ""
-    }
-    ,
-    {
-        direction: "card ltr",
-        key: 6,
-
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
-         tittle: "Under Development",
-        description: "Coming soon...",
-        code: "",
-        demo: ""
-    }
+    
 ]
 
 const Projects = () => {
