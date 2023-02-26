@@ -44,7 +44,7 @@ export default function Home() {
             <div className="heading">EDUCATIONS</div>
             <div className="description">
               <p>
-                <b>77.6% | CGPA-8.48</b><br />
+                <b>77.2% | CGPA-8.48</b><br />
                 Diploma in Computer Science & Engineering <br />
                 Government Polytechnic, Chhapra <br />
                 Board- SBTE Patna, Bihar
