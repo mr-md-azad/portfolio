@@ -42,6 +42,28 @@ const Data = [
         code: "",
         demo: ""
     }
+    ,
+    {
+        direction: "card ltr",
+        key: 5,
+
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
+         tittle: "Under Development",
+        description: "Coming soon...",
+        code: "",
+        demo: ""
+    }
+    ,
+    {
+        direction: "card ltr",
+        key: 6,
+
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCG81rbMmMimUMyyRgIuFWq7-Hz33jqhx8g&usqp=CAU",
+         tittle: "Under Development",
+        description: "Coming soon...",
+        code: "",
+        demo: ""
+    }
 ]
 
 const Projects = () => {
